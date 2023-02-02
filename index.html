@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css" id="theme">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__content _container">
+        <div class="header__logo">
+            <a href="index.html" class="">
+                <picture>
+                    <img id="header-logo" src="img/logo/Logo-header.png" alt="">
+                </picture>
+            </a>
+        </div>
+        <div class="header__navigation">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="reading.html">Что почитать</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__age">
+            <a href="index-18+.html">
+                18+
+            </a>
+        </div>
+        <div class="header__search">
+            <span class="open-search-modal">
+                <img src="img/icons/search.svg">
+            </span>
+            <input class="searchModal" type="search" id="search" placeholder="Найдется всё" />
+        </div>
+        <div class="header__settings">
+            <div class="settings-lang">
+                <picture>
+                    <img id="icon-lang" src="img/icons/world.svg" alt="" class="settings-icon">
+                </picture>
+                <a href="">Eng</a>
+            </div>
+            <div class="settings-version">
+                <img src="#" alt="" class="settings-icon">
+                <a href="#" id="toggle-theme" class="toggle-theme" data-show="false">Темная тема</a>
+            </div>
+        </div>
+        <div class="header__login">
+            <div class="login-registration">
+                <a href="registration.html">Регистрация</a>
+            </div>
+            <div class="login-enter">
+                <a href="login.html">Вход</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="header-responsive">
+    <div class="header-responsive__content">
+        <div class="header-responsive__top">
+            <div class="header-responsive__menu">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <picture>
+                            <img id="burger-menu-mobile" src="img/icons/burger-menu.svg" alt="">
+                        </picture>
+                    </label>
+                    <ul class="menu__box">
+                        <label class="menu__btn" for="menu__toggle">
+                            <picture>
+                                <img id="burger-close-mobile" src="img/icons/close.svg" alt="">
+                            </picture>
+                        </label>
+                        <div class="menu__nav">
+                            <picture>
+                                <img id="header-logo-burger" src="img/logo/Logo-header.png" alt="">
+                            </picture>
+                            <nav>
+                                <ul>
+                                    <li><a href="catalog.html">Каталог</a></li>
+                                    <li><a href="reading.html">Что почитать</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                </ul>
+                            </nav>
+                            <div class="age-active">
+                                <a href="index-18+.html">
+                                    18+
+                                </a>
+                            </div>
+                            <div class="menu__reg-log">
+                                <a href="registration.html">Регистрация</a>
+                                <a href="login.html">Вход</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-responsive__logo">
+                <a href="index.html" class="">
+                    <picture>
+                        <img id="header-logo" src="img/logo/Logo-header.png" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="header-responsive__settings">
+                <div class="settings-version">
+                    <a href="#" class="toggle-theme" id="toggle-theme" data-show="false">
+                        <picture>
+                            <img id="icon-theme" src="img/icons/night.svg" alt="" class="settings-icon">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="header-responsive__search">
+                <div class="search-btn">
+                    <img id="magnifier" src="img/icons/magnifier.svg" alt="">
+                </div>
+                <div class="close-btn">
+                    <span class="fas fa-times"></span>
+                </div>
+                <div class="search-wrapper">
+                    <div class="search-data">
+                        <input type="text" required>
+                        <div class="line"></div>
+                        <label>Введите для поиска..</label>
+                        <span class="fas fa-search search-magnifier"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+        <main class="page">
+            <section id="block-hero" class="block-hero">
+                <div class="block-hero__content _container">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="block-hero__filter-content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="filter-item">
+                                            <div class="filter-item__img"
+                                                style="background-image: url(img/home-page/filter/filter-1.png);">
+                                                <!-- <div class="filter-item__img title">
+                                                    <h3 class="filter-title">Комиксы</h3>
+                                                </div> -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="filter-item">
+                                            <div class="filter-item__img" style="background-image:url(img/home-page/filter/filter-2.png);
+                                            ">
+                                                <!-- <div class="filter-item__img title">
+                                                    <h3 class="filter-title-dark">Новеллы</h3>
+                                                </div> -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-hero__banner">
+                                <div class="swiper-container hero">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="banner-slide">
+                                                <div class="banner-slide__desktop">
+                                                    <img src="img/home-page/background-main/backgroud-3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-slide">
+                                                <div class="banner-slide__desktop">
+                                                    <img src="img/home-page/background-main/back-comics.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="block-hero__filter">
+                                <div class="filter-content">
+                                    <div class="filter-content__btn">
+                                        <div class="btn-filter">
+                                            <a href="#">Топ дня</a>
+                                        </div>
+                                        <div class="btn-filter">
+                                            <a href="#">Топ недели</a>
+                                        </div>
+                                        <div class="btn-filter">
+                                            <a href="#">Топ месяца</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-container filter">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="filter-content__comics">
+                                                    <div class="comics-img">
+                                                        <img src="img/slider-comics/preview-6.jpg" alt="">
+                                                    </div>
+                                                    <div class="comics-descr">
+                                                        <h5>К худу или к добру?</h5>
+                                                        <div class="comics-descr__chapters">
+                                                            <div class="chapters-item">
+                                                                <span class="chapters-item__date">
+                                                                    Манхва 2021 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="filter-content__comics">
+                                                    <div class="comics-img">
+                                                        <img src="img/slider-comics/preview-6.jpg" alt="">
+                                                    </div>
+                                                    <div class="comics-descr">
+                                                        <h5>К худу или к добру?</h5>
+                                                        <div class="comics-descr__chapters">
+                                                            <div class="chapters-item">
+                                                                <span class="chapters-item__date">
+                                                                    Манхва 2021 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="filter-content__comics">
+                                                    <div class="comics-img">
+                                                        <img src="img/slider-comics/preview-6.jpg" alt="">
+                                                    </div>
+                                                    <div class="comics-descr">
+                                                        <h5>К худу или к добру?</h5>
+                                                        <div class="comics-descr__chapters">
+                                                            <div class="chapters-item">
+                                                                <span class="chapters-item__date">
+                                                                    Манхва 2021 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="filter-content__comics">
+                                                    <div class="comics-img">
+                                                        <img src="img/slider-comics/preview-6.jpg" alt="">
+                                                    </div>
+                                                    <div class="comics-descr">
+                                                        <h5>К худу или к добру?</h5>
+                                                        <div class="comics-descr__chapters">
+                                                            <div class="chapters-item">
+                                                                <span class="chapters-item__date">
+                                                                    Манхва 2021 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="block-banner">
+                <div class="block-banner__content _container"
+                    style="background-image: url(img/home-page/banner-main/banner.jpg);">
+                    <div class="row">
+                        <div class="col-8">
+                            <h2 class="banner-title">
+                                Зарегистрируйся сейчас
+                            </h2>
+                            <p class="banner-desc">И получи скидку или баллы себе на счет</p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn-banner">Зарегестрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section class="block-last-updates">
+                <div class="block-last-updates__title _container">
+                    <h2 class="title-h2">Последние обновления</h2>
+                </div>
+                <div class="block-last-updates__slider">
+                    <div class="swiper-container carousel-one">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block-popular">
+                <div class="block-popular__title _container">
+                    <h2 class="title-h2">Популярное</h2>
+                </div>
+                <div class="block-popular__slider">
+                    <div class="swiper-container carousel-one">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-preview">
+                                    <a href="content-comics.html" class="slide-preview-link">
+                                        <img class="slide-preview image" src="img/slider-comics/preview-6.jpg" alt="">
+                                        <h4 class="swiper-preview title">К худу или к добру?</h4>
+                                        <p class="swiper-preview genre">Комикс, боевик</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block-news">
+                <div class="_container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="block-news__title">
+                                <h2 class="title-h2">Последние новости</h2>
+                            </div>
+                            <div class="block-news__slider">
+                                <div class="swiper-container carousel-four">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slide-news">
+                                                <div class="slide-news__image"
+                                                    style="background-image: url(img/home-page/news-main/news-1.jpg);">
+                                                </div>
+                                                <div class="slide-news__descr">
+                                                    <h4 class="title-news">Новость 1</h4>
+                                                    <p class="descr-news">
+                                                        Генерация рыбатекста происходит довольно просто: есть
+                                                        несколько фиксированных наборов фраз и словочетаний, из
+                                                        которых в опредёленном порядке формируются предложения.
+                                                    </p>
+                                                    <a class="btn-news" href="#">Читать далее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-news">
+                                                <div class="slide-news__image"
+                                                    style="background-image: url(img/home-page/news-main/news-1.jpg);">
+                                                </div>
+                                                <div class="slide-news__descr">
+                                                    <h4 class="title-news">Новость 1</h4>
+                                                    <p class="descr-news">
+                                                        Генерация рыбатекста происходит довольно просто: есть
+                                                        несколько фиксированных наборов фраз и словочетаний, из
+                                                        которых в опредёленном порядке формируются предложения.
+                                                    </p>
+                                                    <a class="btn-news" href="#">Читать далее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-news">
+                                                <div class="slide-news__image"
+                                                    style="background-image: url(img/home-page/news-main/news-1.jpg);">
+                                                </div>
+                                                <div class="slide-news__descr">
+                                                    <h4 class="title-news">Новость 1</h4>
+                                                    <p class="descr-news">
+                                                        Генерация рыбатекста происходит довольно просто: есть
+                                                        несколько фиксированных наборов фраз и словочетаний, из
+                                                        которых в опредёленном порядке формируются предложения.
+                                                    </p>
+                                                    <a class="btn-news" href="#">Читать далее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-news">
+                                                <div class="slide-news__image"
+                                                    style="background-image: url(img/home-page/news-main/news-1.jpg);">
+                                                </div>
+                                                <div class="slide-news__descr">
+                                                    <h4 class="title-news">Новость 1</h4>
+                                                    <p class="descr-news">
+                                                        Генерация рыбатекста происходит довольно просто: есть
+                                                        несколько фиксированных наборов фраз и словочетаний, из
+                                                        которых в опредёленном порядке формируются предложения.
+                                                    </p>
+                                                    <a class="btn-news" href="#">Читать далее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-news">
+                                                <div class="slide-news__image"
+                                                    style="background-image: url(img/home-page/news-main/news-1.jpg);">
+                                                </div>
+                                                <div class="slide-news__descr">
+                                                    <h4 class="title-news">Новость 1</h4>
+                                                    <p class="descr-news">
+                                                        Генерация рыбатекста происходит довольно просто: есть
+                                                        несколько фиксированных наборов фраз и словочетаний, из
+                                                        которых в опредёленном порядке формируются предложения.
+                                                    </p>
+                                                    <a class="btn-news" href="#">Читать далее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__top">
+        <div class="footer__content _container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="footer__logo">
+                        <a href="#" class="">
+                            <picture>
+                                <img src="img/logo/Logo-footer-white.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="footer__descr">
+                        <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого
+                            растут
+                            аж из 45 года до нашей эры. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer__form-box">
+                        <span>Подпишись на рассылку</span>
+                        <label type="email" name="email" class="form_box">
+                            <input type="email" name="email" class="" placeholder="Email">
+                        </label>
+                        <button type="submit">
+                            send
+                        </button>
+                    </div>
+                    <div class="footer__social-network">
+                        <a href="#" class="social-button">
+                            <img src="img/icons/twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/traced.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/vka.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/dis.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/elip.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-nav">
+            <p>LLC Mine . All Rights Reserved. © 2020</p>
+            <a class="footer-links" href="#">FAQ</a>
+            <a class="footer-links" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    
+</script>
+    </div>
+    <script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

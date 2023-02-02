@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Сам контент</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css" id="theme">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__content _container">
+        <div class="header__logo">
+            <a href="index.html" class="">
+                <picture>
+                    <img id="header-logo" src="img/logo/Logo-header.png" alt="">
+                </picture>
+            </a>
+        </div>
+        <div class="header__navigation">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="reading.html">Что почитать</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__age">
+            <a href="index-18+.html">
+                18+
+            </a>
+        </div>
+        <div class="header__search">
+            <span class="open-search-modal">
+                <img src="img/icons/search.svg">
+            </span>
+            <input class="searchModal" type="search" id="search" placeholder="Найдется всё" />
+        </div>
+        <div class="header__settings">
+            <div class="settings-lang">
+                <picture>
+                    <img id="icon-lang" src="img/icons/world.svg" alt="" class="settings-icon">
+                </picture>
+                <a href="">Eng</a>
+            </div>
+            <div class="settings-version">
+                <img src="#" alt="" class="settings-icon">
+                <a href="#" id="toggle-theme" class="toggle-theme" data-show="false">Темная тема</a>
+            </div>
+        </div>
+        <div class="header__login">
+            <div class="login-registration">
+                <a href="registration.html">Регистрация</a>
+            </div>
+            <div class="login-enter">
+                <a href="login.html">Вход</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="header-responsive">
+    <div class="header-responsive__content">
+        <div class="header-responsive__top">
+            <div class="header-responsive__menu">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <picture>
+                            <img id="burger-menu-mobile" src="img/icons/burger-menu-light.svg" alt="">
+                        </picture>
+                    </label>
+                    <ul class="menu__box">
+                        <label class="menu__btn" for="menu__toggle">
+                            <picture>
+                                <img id="burger-close-mobile" src="img/icons/close.svg" alt="">
+                            </picture>
+                        </label>
+                        <div class="menu__nav">
+                            <picture>
+                                <img id="header-logo-burger" src="img/logo/Logo-header.png" alt="">
+                            </picture>
+                            <nav>
+                                <ul>
+                                    <li><a href="catalog.html">Каталог</a></li>
+                                    <li><a href="reading.html">Что почитать</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                </ul>
+                            </nav>
+                            <div class="age-active">
+                                <a href="index-18+.html">
+                                    18+
+                                </a>
+                            </div>
+                            <div class="menu__reg-log">
+                                <a href="registration.html">Регистрация</a>
+                                <a href="login.html">Вход</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-responsive__logo">
+                <a href="index.html" class="">
+                    <picture>
+                        <img id="header-logo" src="img/logo/logo-header-white.png" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="header-responsive__settings">
+                <div class="settings-version">
+                    <a href="#" class="toggle-theme" id="toggle-theme" data-show="false">
+                        <picture>
+                            <img id="icon-theme" src="img/icons/night.svg" alt="" class="settings-icon">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="header-responsive__search">
+                <div class="search-btn">
+                    <img id="magnifier" src="img/icons/magnifier-light.svg" alt="">
+                </div>
+                <div class="close-btn">
+                    <span class="fas fa-times"></span>
+                </div>
+                <div class="search-wrapper">
+                    <div class="search-data">
+                        <input type="text" required>
+                        <div class="line"></div>
+                        <label>Введите для поиска..</label>
+                        <span class="fas fa-search search-magnifier"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+        <main class="page" style="margin-top: 0px;">
+            <section class="block-content-comics" style="
+            background-image: url(img/background/back-priview.png);
+            
+            ">
+                <div class="block-content-comics__hero _container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-content">
+                                <div class="hero-content__rating">
+                                    <div class="rating-star-red">
+                                        <img src="img/icons/star-good.svg" alt="">
+                                    </div>
+                                    <div class="rating-star-red">
+                                        <img src="img/icons/star-good.svg" alt="">
+                                    </div>
+                                    <div class="rating-star-red">
+                                        <img src="img/icons/star-good.svg" alt="">
+                                    </div>
+                                    <div class="rating-star-red">
+                                        <img src="img/icons/star-good.svg" alt="">
+                                    </div>
+                                    <div class="rating-star-grey">
+                                        <img src="img/icons/star-bad.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="hero-content__title">
+                                    <h1>Копай убегай</h1>
+                                </div>
+                                <div class="hero-content__tags">
+                                    Тэги:
+                                    <span class="tags-genre">ужасы,</span>
+                                    <span class="tags-genre">фантастика,</span>
+                                    <span class="tags-genre">трейлер,</span>
+                                    <span class="tags-genre">драма</span>
+                                    <span class="tags-genre">ужасы,</span>
+                                    <span class="tags-genre">фантастика,</span>
+                                    <span class="tags-genre">трейлер</span>
+                                    <span class="tags-genre-more">...</span>
+                                </div>
+                                <div class="hero-content__desr">
+                                    <p>Русском языке – вы можете использовать полученный здесь контент абсолютно
+                                        бесплатно и
+                                        в любых целях, не запрещённых законодательством. </p>
+                                </div>
+                                <div class="hero-content__btn">
+                                    <div class="btn-continue">
+                                        <a class="btn-desktop" href="#">Продолжить чтение 1г</a>
+                                    </div>
+                                    <div id="menu">
+                                        <div id="menu-main">
+                                            <span data-next="" id="current-option"></span>
+                                            <button id="next-option">
+                                            </button>
+                                        </div>
+
+                                        <div id="width-fix"></div>
+                                    </div>
+                                </div>
+                                <script>
+                                    const options = ['Избранное', 'Читаю', 'Прочитанное', 'В закладки'];
+                                    const mainEl = document.getElementById("menu");
+                                    let currentOption = 0;
+                                    const optionEl = document.getElementById("current-option");
+
+                                    const widthFix = document.getElementById("width-fix");
+
+                                    options.forEach(e => {
+                                        let el = document.createElement('span');
+                                        el.innerText = e;
+                                        widthFix.appendChild(el)
+                                    });
+                                    optionEl.innerText = options[currentOption];
+
+                                    mainEl.onclick = function () {
+                                        currentOption = currentOption < options.length - 1 ? currentOption + 1 : 0;
+                                        optionEl.dataset.next = options[currentOption];
+
+                                        mainEl.classList.add('anim');
+
+                                        setTimeout(() => {
+                                            optionEl.innerText = options[currentOption];
+                                            mainEl.classList.remove('anim');
+                                        }, 650);
+                                    }
+                                </script>
+                                <div class="hero-content__authors">
+                                    <p>Издательство:<a href="#"> TokioBronx</a></p>
+                                    <p>Автор:<a href="#"> Хайодзако Хуими и Андре Пиросня</a></p>
+                                    <p>Пользователь: human1</p>
+                                </div>
+                                <div class="hero-content__responsive">
+                                    <a href="#" class="cd-popup-trigger">Подробнее</a>
+                                </div>
+                                <div class="hero-content__popup">
+                                    <div class="cd-popup" role="alert">
+                                        <div class="cd-popup-container">
+                                            <p><strong>Описание комикса</strong></p>
+                                            <p>Русском языке – вы можете использовать полученный здесь контент абсолютно
+                                                бесплатно и в любых целях, не запрещённых законодательством. </p>
+                                            <p><strong>Издательство</strong></p>
+                                            <p><a href="#">TokioBronx</a></p>
+                                            <p>Автор:<a href="#"> Хайодзако Хуими и Андре Пиросня</a></p>
+                                            <p>Пользователь: human1</p>
+                                            <a href="#0" class="cd-popup-close img-replace"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block-chapters">
+                <div class="block-chapters__content _container">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="block-chapters__episodes main-content">
+                                <h2 class="title-h2">Новая глава каждую <span>субботу</span></h2>
+                                <a href="view-mode.html" class="episodes episodes-checked">
+                                    <img src="img/content-page/chapter/chapter-1.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">1</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes episodes-checked">
+                                    <img src="img/content-page/chapter/chapter-2.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">2</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes episodes-active">
+                                    <img src="img/content-page/chapter/chapter-3.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">3</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Осталось 3 ч 53 м</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes episodes-active">
+                                    <img src="img/content-page/chapter/chapter-4.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">4</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Осталось 3 ч 53 м</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes">
+                                    <img src="img/content-page/chapter/chapter-5.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">5</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes">
+                                    <img src="img/content-page/chapter/chapter-5.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">6</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes">
+                                    <img src="img/content-page/chapter/chapter-5.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">7</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes">
+                                    <img src="img/icons/new.svg" alt="" class="episode-tag-new">
+                                    <img src="img/content-page/chapter/chapter-5.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">8</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes">
+                                    <img src="img/content-page/chapter/chapter-5.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">9</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                                <a href="/" class="episodes">
+                                    <img src="img/content-page/chapter/chapter-5.jpg" alt="" class="episodes-img" />
+                                    <div class="episodes__item">
+                                        <h6 class="episodes__item_number">10</h6>
+                                        <div class="episodes__item_title">Ее время</div>
+                                        <div class="episodes__item_time">Апр 22.2018</div>
+                                        <div class="episodes__item_star">
+                                            <img src="img/icons/star-good.svg" alt="" class="star-img" />
+                                            <span>4.8</span>
+                                        </div>
+                                        <p class="episodes__item_status">Прочитано</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <aside class="sticky">
+                                <div class="block-chapters__similar">
+                                    <h2 class="title-h2">Похожее</h2>
+                                    <div class="swiper-container carousel-six">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-3.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-4.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-5.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-6.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-chapters__new">
+                                    <h2 class="title-h2">Новое</h2>
+                                    <div class="swiper-container carousel-six">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-3.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-4.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-5.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slide-preview">
+                                                    <div class="slide-new-comics">
+                                                        <img class="image" src="img/slider-comics/preview-6.jpg" alt="">
+                                                        <h4 class="title">К худу или к добру?</h4>
+                                                        <p class="genre">Комикс, боевик</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block-comments" style="clear: both;">
+                <div class="block-comments__content _container">
+                    <div class="row">
+                        <div class="col-9 m-auto">
+                            <div class="block-comments__title">
+                                <h3>
+                                    Комментарии (10)
+                                </h3>
+                            </div>
+                            <div class="block-comments__field">
+                                <textarea placeholder="Оставить комментарий..."></textarea>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9  m-auto">
+                            <div class="block-comments__comments">
+                                <div class="comments-filter">
+                                    <a href="#">Популярное </a>
+                                    <a href="#">Новое </a>
+                                </div>
+                                <div class="comments">
+                                    <div class="comments-card">
+                                        <div class="comments-card__avatar">
+                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="comments-card__content">
+                                            <div class="comments-card__nick">
+                                                <h3>human1</h3>
+                                            </div>
+                                            <div class="comments-card__date">
+                                                <p>6 часов назад</p>
+                                            </div>
+                                            <div class="comments-card__text">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                                                    латинице с начала XVI века. В то время некий безымянный печатник
+                                                    создал
+                                                    большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                                                    распечатки образцов</p>
+                                                <div class="comments-criticism">
+                                                    <a href="#">
+                                                        <img src="img/icons/like.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/dislike.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/ban.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="comments-card__answer">
+                                                <button class="answer-show-btn" id="toggle">
+                                                    <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-card">
+                                        <div class="comments-card__avatar">
+                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="comments-card__content">
+                                            <div class="comments-card__nick">
+                                                <h3>human1</h3>
+                                            </div>
+                                            <div class="comments-card__text">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                                                    латинице с начала XVI века. В то время некий безымянный печатник
+                                                    создал
+                                                    большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                                                    распечатки образцов</p>
+                                                <div class="comments-criticism">
+                                                    <a href="#">
+                                                        <img src="img/icons/like.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/dislike.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/ban.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="comments-card__answer">
+                                                <button class="answer-show-btn" id="toggle">
+                                                    <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-card">
+                                        <div class="comments-card__avatar">
+                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="comments-card__content">
+                                            <div class="comments-card__nick">
+                                                <h3>human1</h3>
+                                            </div>
+                                            <div class="comments-card__text">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                                                    латинице с начала XVI века. В то время некий безымянный печатник
+                                                    создал
+                                                    большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                                                    распечатки образцов</p>
+                                                <div class="comments-criticism">
+                                                    <a href="#">
+                                                        <img src="img/icons/like.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/dislike.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/ban.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="comments-card__answer">
+                                                <button class="answer-show-btn" id="toggle">
+                                                    <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-card">
+                                        <div class="comments-card__avatar">
+                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="comments-card__content">
+                                            <div class="comments-card__nick">
+                                                <h3>human1</h3>
+                                            </div>
+                                            <div class="comments-card__text">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                                                    латинице с начала XVI века. В то время некий безымянный печатник
+                                                    создал
+                                                    большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                                                    распечатки образцов</p>
+                                                <div class="comments-criticism">
+                                                    <a href="#">
+                                                        <img src="img/icons/like.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/dislike.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/ban.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="comments-card__answer">
+                                                <button class="answer-show-btn" id="toggle">
+                                                    <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-card">
+                                        <div class="comments-card__avatar">
+                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="comments-card__content">
+                                            <div class="comments-card__nick">
+                                                <h3>human1</h3>
+                                            </div>
+                                            <div class="comments-card__text">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                                                    латинице с начала XVI века. В то время некий безымянный печатник
+                                                    создал
+                                                    большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                                                    распечатки образцов</p>
+                                                <div class="comments-criticism">
+                                                    <a href="#">
+                                                        <img src="img/icons/like.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/dislike.svg" alt="">
+                                                        <span>1</span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/icons/ban.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="comments-card__answer">
+                                                <button class="answer-show-btn" id="toggle">
+                                                    <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-answer">
+                                                    <div class="card-answer__avatar">
+                                                        <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                    </div>
+                                                    <div class="card-answer__content">
+                                                        <div class="card-answer__nick">
+                                                            <h3>human1</h3>
+                                                        </div>
+                                                        <div class="card-answer__text">
+                                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                печати и
+                                                                вэб-дизайне.
+                                                            </p>
+                                                        </div>
+                                                        <div class="comments-criticism">
+                                                            <a href="#">
+                                                                <img src="img/icons/like.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/dislike.svg" alt="">
+                                                                <span>1</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <img src="img/icons/ban.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-block">
+                                        <div class="comments-card">
+                                            <div class="comments-card__avatar">
+                                                <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="comments-card__content">
+                                                <div class="comments-card__nick">
+                                                    <h3>human1</h3>
+                                                </div>
+                                                <div class="comments-card__text">
+                                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                                                        текстов на
+                                                        латинице с начала XVI века. В то время некий безымянный печатник
+                                                        создал
+                                                        большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                                                        для
+                                                        распечатки образцов</p>
+                                                    <div class="comments-criticism">
+                                                        <a href="#">
+                                                            <img src="img/icons/like.svg" alt="">
+                                                            <span>1</span>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="img/icons/dislike.svg" alt="">
+                                                            <span>1</span>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="img/icons/ban.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="comments-card__answer">
+                                                    <button class="answer-show-btn" id="toggle">
+                                                        <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                    <div class="card-answer">
+                                                        <div class="card-answer__avatar">
+                                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                        </div>
+                                                        <div class="card-answer__content">
+                                                            <div class="card-answer__nick">
+                                                                <h3>human1</h3>
+                                                            </div>
+                                                            <div class="card-answer__text">
+                                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                    печати и
+                                                                    вэб-дизайне.
+                                                                </p>
+                                                            </div>
+                                                            <div class="comments-criticism">
+                                                                <a href="#">
+                                                                    <img src="img/icons/like.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/dislike.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/ban.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-answer">
+                                                        <div class="card-answer__avatar">
+                                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                        </div>
+                                                        <div class="card-answer__content">
+                                                            <div class="card-answer__nick">
+                                                                <h3>human1</h3>
+                                                            </div>
+                                                            <div class="card-answer__text">
+                                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                    печати и
+                                                                    вэб-дизайне.
+                                                                </p>
+                                                            </div>
+                                                            <div class="comments-criticism">
+                                                                <a href="#">
+                                                                    <img src="img/icons/like.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/dislike.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/ban.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-card">
+                                            <div class="comments-card__avatar">
+                                                <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="comments-card__content">
+                                                <div class="comments-card__nick">
+                                                    <h3>human1</h3>
+                                                </div>
+                                                <div class="comments-card__text">
+                                                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                                                        текстов на
+                                                        латинице с начала XVI века. В то время некий безымянный печатник
+                                                        создал
+                                                        большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                                                        для
+                                                        распечатки образцов</p>
+                                                    <div class="comments-criticism">
+                                                        <a href="#">
+                                                            <img src="img/icons/like.svg" alt="">
+                                                            <span>1</span>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="img/icons/dislike.svg" alt="">
+                                                            <span>1</span>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="img/icons/ban.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="comments-card__answer">
+                                                    <button class="answer-show-btn" id="toggle">
+                                                        <span>ПОКАЗАТЬ ОТВЕТЫ</span></button>
+                                                    <div class="card-answer">
+                                                        <div class="card-answer__avatar">
+                                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                        </div>
+                                                        <div class="card-answer__content">
+                                                            <div class="card-answer__nick">
+                                                                <h3>human1</h3>
+                                                            </div>
+                                                            <div class="card-answer__text">
+                                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                    печати и
+                                                                    вэб-дизайне.
+                                                                </p>
+                                                            </div>
+                                                            <div class="comments-criticism">
+                                                                <a href="#">
+                                                                    <img src="img/icons/like.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/dislike.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/ban.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-answer">
+                                                        <div class="card-answer__avatar">
+                                                            <img src="img/user-page/avatar/avatar.jpg" alt="">
+                                                        </div>
+                                                        <div class="card-answer__content">
+                                                            <div class="card-answer__nick">
+                                                                <h3>human1</h3>
+                                                            </div>
+                                                            <div class="card-answer__text">
+                                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в
+                                                                    печати и
+                                                                    вэб-дизайне.
+                                                                </p>
+                                                            </div>
+                                                            <div class="comments-criticism">
+                                                                <a href="#">
+                                                                    <img src="img/icons/like.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/dislike.svg" alt="">
+                                                                    <span>1</span>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <img src="img/icons/ban.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a id="btn-show-more" class="btn-show-more" href="#">Показать ещё</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__top">
+        <div class="footer__content _container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="footer__logo">
+                        <a href="#" class="">
+                            <picture>
+                                <img src="img/logo/Logo-footer-white.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="footer__descr">
+                        <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого
+                            растут
+                            аж из 45 года до нашей эры. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer__form-box">
+                        <span>Подпишись на рассылку</span>
+                        <label type="email" name="email" class="form_box">
+                            <input type="email" name="email" class="" placeholder="Email">
+                        </label>
+                        <button type="submit">
+                            send
+                        </button>
+                    </div>
+                    <div class="footer__social-network">
+                        <a href="#" class="social-button">
+                            <img src="img/icons/twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/traced.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/vka.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/dis.svg" alt="">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="img/icons/elip.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-nav">
+            <p>LLC Mine . All Rights Reserved. © 2020</p>
+            <a class="footer-links" href="#">FAQ</a>
+            <a class="footer-links" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    
+</script>
+    </div>
+    <script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+    <script>
+        const headerLogo = document.querySelectorAll('#header-logo');
+        const burgerMenu = document.querySelectorAll('#burger-menu-mobile');
+        const magnifier = document.querySelectorAll('#magnifier');
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            /*Если сделали скролл на 60 задаём новый класс для header*/
+            if (height > 60) {
+                $('.header-responsive').addClass('header-responsive-fixed');
+            } else {
+                /*Если меньше 100px удаляем класс для header*/
+                $('.header-responsive').removeClass('header-responsive-fixed');
+            }
+        });
+        let tagMoreBtn = document.querySelector(".tags-genre-more");
+        let tagsForm = document.querySelector(".hero-content__tags");
+
+        tagMoreBtn.addEventListener('click', function () {
+            tagsForm.classList.add("open");
+        })
+
+        if (window.location.href == 'https://comics1.gitlab.io/comics/content-comics.html') {
+            $('.header-responsive').addClass('transparent-back');
+        };
+        window.onscroll = () => {
+            if (window.scrollY > 60) {
+                headerLogo[1].setAttribute("src", "img/logo/Logo-header.png");
+                burgerMenu[0].setAttribute("src", "img/icons/burger-menu.svg");
+                magnifier[0].setAttribute("src", "img/icons/magnifier.svg");
+            } else {
+                headerLogo[1].setAttribute("src", "img/logo/logo-header-white.png");
+                burgerMenu[0].setAttribute("src", "img/icons/burger-menu-light.svg");
+                magnifier[0].setAttribute("src", "img/icons/magnifier-light.svg");
+            }
+        }
+        const btnShowMore = document.getElementById('btn-show-more');
+        const hiddenBlock = document.querySelector('.hidden-block');
+        hiddenBlock.style.display = 'none';
+        btnShowMore.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (hiddenBlock.style.display === 'none') {
+                hiddenBlock.style.display = 'block';
+                btnShowMore.innerHTML = 'Скрыть';
+            }
+            else {
+                hiddenBlock.style.display = 'none';
+                btnShowMore.innerHTML = 'Показать ещё';
+            }
+        });
+    </script>
+</body>
+
+</html>
